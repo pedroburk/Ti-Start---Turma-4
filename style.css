@@ -1,14 +1,65 @@
-* {
-    margin: 0;
+*   {
     padding: 0;
+    margin: 0; /* esses três elementos são o reset da página */
     border: 0;
-}
-#content_img {
-    background-image: url(../img/laranjas-maduras-deliciosas-em-tigela-cima-de-mesa-madeira-espaço-para-texto-213148626.jpg);
-    background-size: 40%;
-    background-repeat: no-repeat;
-    border: 2px solid red;
-    width: 100%;
-    height: 600px;
 
+}
+
+#header-top {
+    width: 100%;
+    height: 80px;
+    background-color: darkorange;
+}
+
+main{
+    width: 80%;
+    height: auto;
+    margin: 0 auto; /* alinhamento centralizado */
+
+}
+
+article, p{
+    width: 100%; /* porcentagem de uso da pagina lateralmente (largura) */
+    height: auto; /* porcentagem de uso da pagina em relação a altura */
+}
+
+p{
+    padding: 10px; /* espaçamento entre os parágrafos */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px; /* tamanho da fonte */
+    line-height: 32px; /* espaçamento entre as linhas */
+}
+
+article #article_header {
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid black; /* borda abaixo */
+
+}
+
+article > #article_header > h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+
+nav#menu    {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+nav#menu > .item_menu   {
+    text-decoration: none;
+    color: blanchedalmond;
+    padding: 10px;
+
+}
+
+nav#menu > .item_menu:hover   {
+    text-decoration: none;
+    color: black;
+    background-color: coral;
 }
