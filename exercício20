@@ -1,8 +1,0 @@
-QUAL A PROPRIEDADE CSS QUE PERMITE APLICAR UM 'DEGRADÊ' EM UM ELEMENTO HTML? DE UM EXEMPLO.
-R: linear-gradiente
-
-POR PADRÃO, É RECOMENDADO QUE A APLICAÇÃO DO CSS SEJA NA FORMA INLINE OU MESMO NO PRÓPRIO CORPO DO CÓDIGO HTML.
-R: Por padrão o arquivo CSS deve ser feito externamente.
-
-QUAL A DIFERENÇA BÁSICA ENTRE A UNIDADE DE MEDIDA PIXEL (PX) E A UNIDADE EM PERCENTUAL (%)?
-R: Percentual é uma unidade que nos diz a porcentagem de ocupação em um determinado espaço, em quanto que, pixel é diretamente uma unidade de medida assim como, metro, km, etc.
