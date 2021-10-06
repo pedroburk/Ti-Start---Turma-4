@@ -1,0 +1,11 @@
+Como podemos definir uma URL, dê um exemplo.
+É um link em que através dele você acessa um endereço
+
+O que é HTTP?
+É um protocolo que permite a obtenção de recursos, como documentos HTML, 
+troca de dados cliente-servidor.
+
+O que são vendors em CSS?
+São prefixos que os fabricantes de navegadores adicionam para algumas propriedades
+do CSS sejam utilizadas.
+ex. -webkit-    -moz-   -o-     -ms-
