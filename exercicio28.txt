@@ -1,0 +1,6 @@
+Como é possível descobrir qual é a fonte padrão de renderização do navegador?
+Olhar no DEVTOOL a body que aparece.
+
+É verdade que quando alteramos um CSS diretamente no DEVTOOL automaticamente alteramos
+o arquivo CSS?
+Não é verdade, serve apenas para visualização local.
