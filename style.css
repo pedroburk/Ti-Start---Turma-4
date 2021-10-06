@@ -1,80 +1,36 @@
+:root   {       /* raiz variavel que será utilizada no body logo abaixo */
+
+     --cor-background-body: #BDBDBD; /* cor de fundo */
+}
+
 *   {
     padding: 0;
-    margin: 0; /* esses três elementos são o reset da página */
-    border: 0;
-
+    margin: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+body    {
+    background-color: var(--cor-background-body);
 }
 
-:root   {
-    --cor_de_fonte: red;
-    --cor_background_padrao: yellow;
+div#quadrado    {
+    margin: 50px auto; /* margem do topo de 50px e as demais auto para ficar centralizado */
+    width: 300px;
+    height: 300px;
+    border: 2px dotted brown; /* dotted é o estilo da borda */
+    background-color: #fff;
 }
 
-#header-top {
-    width: 100%;
-    height: 80px;
-    background-color: darkorange;
-}
-
-main{
-    width: 80%;
-    height: auto;
-    margin: 0 auto; /* alinhamento centralizado */
-
-}
-
-article, p{
-    width: 100%; /* porcentagem de uso da pagina lateralmente (largura) */
-    height: auto; /* porcentagem de uso da pagina em relação a altura */
-}
-
-p{
-    padding: 10px; /* espaçamento entre os parágrafos */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px; /* tamanho da fonte */
-    line-height: 32px; /* espaçamento entre as linhas */
-}
-
-article #article_header {
+div#quadrado > div#forma{   /* divforma é filha do divquadrado */
+    width: 100px;
+    /* height: 100px; */
+    height: 30px;           /* com 30px ele fica no formato de botão */
+    background-color: chocolate;
+    margin: 50px auto;
+    -webkit-border-radius: 100px;    /* vendor de arredondamento da borda referente ao google chrome e outros */
+    -moz-border-radius: 100px;      /* vendor de arredondamento da borda referente ao mozila */
+    -ms-border-radius: 100px;       /* vendor de arredondamento da borda referente ao internet explorer */
+    border-radius: 100px;
     padding: 10px;
-    height: auto;
-    width: 100%;
-    border-bottom: 1px solid black; /* borda abaixo */
-
+    cursor: pointer;       /*  muda o cursor do mouse para hand (mão) */
 }
 
-article > #article_header > h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 22px;
-}
-
-nav#menu    {
-    width: 80%;
-    height: auto;
-    padding: 10px;
-    margin: 0 auto;
-
-}
-
-nav#menu > .item_menu   {
-    text-decoration: none;
-    color: blanchedalmond;
-    padding: 10px;
-
-}
-
-nav#menu > .item_menu:hover   {
-    text-decoration: none;
-    color: black;
-    background-color: coral;
-}
-
-main > #receitas    {
-    background-color: var(--cor_background_padrao);
-    width: 100%;
-    height: 600px;
-}
