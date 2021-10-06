@@ -5,6 +5,15 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+:root   {
+    --cor_de_fonte: red;
+    --cor_background_padrao: yellow;
+}
+
 #header-top {
     width: 100%;
     height: 80px;
@@ -62,4 +71,10 @@ nav#menu > .item_menu:hover   {
     text-decoration: none;
     color: black;
     background-color: coral;
+}
+
+main > #receitas    {
+    background-color: var(--cor_background_padrao);
+    width: 100%;
+    height: 600px;
 }
