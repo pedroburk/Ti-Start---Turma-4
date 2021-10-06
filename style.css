@@ -1,36 +1,21 @@
-:root   {       /* raiz variavel que será utilizada no body logo abaixo */
-
-     --cor-background-body: #BDBDBD; /* cor de fundo */
-}
-
 *   {
     padding: 0;
     margin: 0;
 }
 
-body    {
-    background-color: var(--cor-background-body);
+div {
+        width: 150px;
+        height: 150px;
+        margin: 50px auto;
+        border-radius: 100%;
+        background-color: #000;
 }
 
-div#quadrado    {
-    margin: 50px auto; /* margem do topo de 50px e as demais auto para ficar centralizado */
-    width: 300px;
-    height: 300px;
-    border: 2px dotted brown; /* dotted é o estilo da borda */
-    background-color: #fff;
-}
-
-div#quadrado > div#forma{   /* divforma é filha do divquadrado */
-    width: 100px;
-    /* height: 100px; */
-    height: 30px;           /* com 30px ele fica no formato de botão */
-    background-color: chocolate;
+div:hover  {    /* a pseudo classe hover serve para que o elemento seja alterado ao passar por cima dele */
+    width: 200px;
+    height: 200px;
     margin: 50px auto;
-    -webkit-border-radius: 100px;    /* vendor de arredondamento da borda referente ao google chrome e outros */
-    -moz-border-radius: 100px;      /* vendor de arredondamento da borda referente ao mozila */
-    -ms-border-radius: 100px;       /* vendor de arredondamento da borda referente ao internet explorer */
-    border-radius: 100px;
-    padding: 10px;
-    cursor: pointer;       /*  muda o cursor do mouse para hand (mão) */
+    border-radius: 100%;
+    background-color: rgb(240, 10, 10);
+    cursor: pointer;
 }
-
