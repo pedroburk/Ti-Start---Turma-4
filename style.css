@@ -1,33 +1,66 @@
-:root   {           /* root é a mesma coisa que html */
-    font-size: 100%;
+*{ 
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
 
-*   {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+main, header, footer {
+    width: 80%;
+    background-color: darkgoldenrod;
+    margin:10px auto 10px auto;
 }
 
-article#el-pai  {
-    width: 100vw;   /* vw e vh dimensionam corretamente a página em diversos tamanhos */
-    height: 100vh;
-    padding: 5px;
-    background-color: tomato;
+main {
+    height: auto;
     
 }
 
-article#el-pai p#el-filho   {
-    width: 100%;
-    height: auto;
-    background-color: coral;
-    font-size: 1rem; /*1rem ira valer 30px pois irá procurar o elemento root, ou seja,
-                        la está a especificação do valor a multiplicar com o rem*/
+header {
+    height: 60px;
 }
-/* 
-article#el-pai p#el-filho   {
-    width: 100%;
+
+footer {
     height: auto;
-    background-color: coral;
-    font-size: 2em; 2em ira valer 40px pois irá procurar o elemento pai
-                        mais próximo que é o article nesse caso, ou seja,
-                            2em é igual 2x20px do article-pai*/
+}
+
+.ajusteTamanho {
+    height: 30vh;
+    background-color: darkolivegreen;
+}
+
+.content-card > div, footer > div {
+    width: 48%;
+    height: 200px;
+    background-color: darkred;
+   
+}
+
+.flex {
+    display: flex;
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+section {
+    margin:10px 0 10px 0;
+    background-color: darkturquoise;
+}
+
+
+@media screen and (max-width:700px){
+    body{
+        background-color: black;
+    }
+
+    section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    section.content-card > div {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
