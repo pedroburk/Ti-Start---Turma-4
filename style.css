@@ -1,78 +1,177 @@
 *   {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
-    padding: 0;
-
 }
 
-main, header, footer    {
+.paleta {
+    color: #D50000;                 /* título principal */
+    color: rgb(173, 103, 175);  /* fontes */
+    color: rgb(13, 182, 13);    /* botão */
+    color: rgb(241, 247, 241);  /* cor barra superior */
+}
+
+:root{
+    font-size: 100%;    /* força o navegador usar esse padrão, tanto o tamanho como as outras especificações */
+    --cor-border-geral: rgb(241, 247, 241);
+    --cor-padrao-fonte: rgb(173, 103, 175); 
+    --font-padrao: 'Tenali Ramakrishna', sans-serif, verdana;
+    --font-cor-titulo: #D50000;
+}
+
+a   {
+    text-decoration: none;  /*tirar o efeito de link da escrita*/
+    font-size: 1.2rem;
+    font-family: var(--font-padrao);
+    color: var(--cor-padrao-fonte);
+    /* background-color: crimson; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+a.go:hover   {      /* hover faz o efeito de cor de fundo ao posicionar o mouse em cima */
+    background-color: var(--font-cor-titulo);
+    color: #fff;
+    transition: 2s; /*tempo para que o hover aconteça*/
+}
+
+.icons-list {
+    margin-right: 2px;
+    font-size: 1.5rem; /* o icone aceita mudar o tamanho pelo font-size*/
+}
+
+header, main, footer    {
     width: 80%;
-    background-color: darkorange;
-    margin: 10px auto 10px auto;
-}
-
-main    {
-    height: auto;
+    margin: 0 auto;
     
     
 }
 
-header  {
+header#top-header{
+    border-bottom:1px solid var(--cor-border-geral);
     height: 60px;
-}
-
-footer  {
-    height: auto;
-}
-
-.ajusteTamanho  {
-    height: 10vh;
-    background-color: chocolate;
-}
-
-.content-card > div, footer > div {
-    width: 49.8%;
-    height: 200px;
-    background-color: coral;
+    flex-wrap: wrap;
 }
 
 .flex   {
     display: flex;
-}
-
-.space-btw  {
-    justify-content: space-between;
-}
-
-section {
-    margin: 10px 0 10px 0;
     
 }
 
-@media screen and (max-width:700px){
-    body {
-        background-color: black;
-    }
+.align-center-xy    {
+    width: 50%;
+}
 
-    section {
+
+header#top-header h1, header#top-header nav{
+    width: 50%;
+}
+
+header#top-header h1{
+    color: var(--font-cor-titulo);
+    font-family: var(--font-padrao);
+    font-size: clamp(1rem,5.5vh,3rem);
+    /* justify-content: center; /*centraliza no eixo x */
+    align-items: center;    /*centraliza no eixo y*/
+}
+
+header#top-header nav#menu ul#list-menu     {
+    width: 100%;
+    justify-content: flex-end;
+    /* background-color: darkmagenta; */
+    
+}
+
+/* header#top-header nav{
+    background-color: chartreuse;
+} */
+
+nav#menu ul#list-menu li.item {
+    /* background-color: crimson; */
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#section-cards   {
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: yellow; */
+    flex-wrap: wrap; /* pula o elemento de uma linha p/ outra para caber na pagina*/
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section#section-cards div.card  {
+    width: 320px;
+    border: 1px solid var(--cor-border-geral);
+    flex-grow: 1; /* elimina o espaço do ultimo item na pagina*/
+}
+
+section#section-cards div.card figure.card_img-pizza   {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+
+section#section-cards div.card figure.card_img-pizza img.img-pizza  {
+    width: 100%;
+}
+
+/* section div form.formTamanhoPizza   {
+    align-items: center;
+    justify-content: center;
+} */
+
+section div form.formTamanhoPizza label {
+    width: 30px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+
+}
+
+
+
+h2.sub-titulo-pizza {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    text-align: center; /* centraliza o texto*/
+    padding: 10px 0 10px 0;
+}
+
+form.formTamanhoPizza div.content-controles,
+    form.formTamanhoPizza div.controle-form-btn{
+        width: 100%;
+}
+
+div.controle-form-btn   {
+    padding: 10px;
+    width: 150px;
+    margin-top: 5px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer  {
+    height: 60px;
+    border-top: var(--cor-border-geral);
+    margin-top: 10px;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 390px){
+        
+    header  {
         height: auto;
         flex-direction: column;
-    }
-
-    section.content-card > div     {
-        width: 100%;
-        margin-bottom: 5px;
-
-    }
-
-    footer {
-        height: auto;
-        flex-direction: column;
-    }
-
-    footer > div{
-        width: 100%;
-        margin-bottom: 5px;
-
     }
 }
